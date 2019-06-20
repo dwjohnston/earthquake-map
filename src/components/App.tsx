@@ -4,6 +4,8 @@ import React from 'react';
 import { createUseStyles } from 'react-jss'
 import { directive } from '@babel/types';
 import { EarthquakeMap } from './EarthquakeMap';
+import { EqList } from './EqList';
+import { DetailPane } from './DetailPanel';
 
 const useStyles = createUseStyles(({
   root: {
@@ -14,7 +16,7 @@ const useStyles = createUseStyles(({
     right: 0,
     top: 0,
     bottom: 0,
-    padding: 20, 
+    padding: 20,
   },
   mapContainer: {
     flex: "1 0 auto",
@@ -30,7 +32,10 @@ function App() {
 
   const classes = useStyles();
   return (<div className={classes.root} >
-    <div> form panel</div>
+    <div>
+      <EqList />
+      <DetailPane />
+    </div>
 
     <div className={classes.mapContainer}>
       <EarthquakeMap />
