@@ -20,9 +20,16 @@ The codebase generally reflects how I'd structure a project.
 
 I might have put some Jest tests in too, on those reducers and selectors etc. But to be honest - I think, especially in a faster pace environment like a technical test like this, TypeScript is much more helpful in avoiding errors. 
 
+## Technology choices 
+
+ - Ordinarily I would add Material-UI but I haven't. 
+ - Redux might be overkill for this kind of thing. You might also use something like react-loads. 
+ - Typescript FTW. 
+ - I opted for JSS for my CSS solution. 
+ - Create-React-App is nice and simple. 
 
 
-
+ 
 
 
 
