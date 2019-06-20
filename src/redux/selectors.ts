@@ -25,13 +25,14 @@ export const selectCurrentMarks = (bounds: Bounds) => (state: State): QuakeFeatu
         return [];
     }
 
-    const adjustedBounds = adjustBounds(bounds);
+//    const adjustedBounds = adjustBounds(bounds);
     const allQuakes = Object.values(state.data);
-    console.log(allQuakes, adjustedBounds)
-    return allQuakes.filter(q => {
-        const [lng, lat, depth] = q.geometry.coordinates;
-        return (adjustedBounds.ne.lat > lat && adjustedBounds.se.lat < lat && adjustedBounds.se.lng > lng && adjustedBounds.sw.lng < lng);
-    })
+    // return allQuakes.filter(q => {
+    //     const [lng, lat, depth] = q.geometry.coordinates;
+    //     return (adjustedBounds.ne.lat > lat && adjustedBounds.se.lat < lat && adjustedBounds.se.lng > lng && adjustedBounds.sw.lng < lng);
+    // })
+
+    return allQuakes; 
 }
 
 

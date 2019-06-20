@@ -45,7 +45,7 @@ export function dataReducer(state : State = initialState, action: ResolvedAction
                     ...acc,
                     [cur.id]: cur
                 }
-            }, state.data);
+            }, {});
 
 
             return {
